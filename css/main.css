@@ -521,6 +521,70 @@ aside input .button {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles Here */
+
+  /*-------------------- Desktop Styles - General Styles --------------------*/
+
+  .content-wrapper {
+    max-width: 950px;
+  }
+
+  /*-------------------- Desktop Styles - Base Header and Footer Styles --------------------*/
+
+  header {
+    padding: 15px 0;
+  }
+
+  /*------------------- Desktop Styles - Homepage -------------------*/
+
+  /* Hero Area */
+
+  .hero-area h1{
+    width 80%:
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+   justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+
+  .reviews article div {
+    width: 42%;
+  }
+
+  /*------------------- Desktop Styles - About Page -------------------*/
+
+  .mission h2 {
+    width: 90%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 83%;
+  }
+
+  /*------------------- Desktop Styles - FAQ Page -------------------*/
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
 /* ==========================================================================
