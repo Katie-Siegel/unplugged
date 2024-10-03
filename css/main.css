@@ -86,12 +86,17 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /*-------------------- Base Header and Footer Styles --------------------*/
 
 header {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  margin: 15px 0;
 }
 
 header .content-wrapper {
@@ -105,21 +110,17 @@ header .content-wrapper {
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
   width: 60%;
-  padding: 20px 0px 15px 0px;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
-
-header nav ul li {
 }
 
 footer {
@@ -131,11 +132,10 @@ footer {
 
 footer .content-wrapper {
   width: 55%;
-  padding: 50px 0px;
 }
 
 footer h4 {
-  padding: 20px;
+  margin: 20px;
 }
 
 footer p {
@@ -144,10 +144,6 @@ footer p {
 
 footer .contact {
   margin-bottom: 50px;
-}
-
-footer .social {
-  padding-bottom: 50px;
 }
 
 footer .social-icons {
@@ -168,20 +164,6 @@ footer .social-icons p {
 
 /*------------------- Mobile Styles - Homepage -------------------*/
 
-h1 {
-}
-
-h2 {
-}
-
-p {
-}
-
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-
 /* Hero Area */
 
 main .hero-area {
@@ -197,11 +179,11 @@ aside {
 }
 
 aside h3 {
-  padding: 20px 0px;
+  margin: 20px 0px;
 }
 
 aside p {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 aside input .text {
@@ -212,17 +194,11 @@ aside input .button {
   padding: 20px 0px;
 }
 
-aside .form-description {
-}
-
 /* Features */
 
 .features {
   display: flex;
   justify-content: center;
-}
-
-.features .content-wrapper {
 }
 
 .features h2 {
@@ -242,7 +218,7 @@ aside .form-description {
 }
 
 .features .icon {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -254,18 +230,15 @@ aside .form-description {
 .reviews {
   display: flex;
   justify-content: center;
-  padding: 50px 0px;
 }
 
 .reviews h2 {
-  padding-bottom: 40px;
-  margin: 0;
+  margin: 40px;
 }
 
 .reviews h3 {
   width: 55%;
-  padding: 20px 0px;
-  margin: 0;
+  margin: 20px 0px;
 }
 
 /*------------------- Mobile Styles - About Page -------------------*/
@@ -289,7 +262,6 @@ aside .form-description {
 .faq {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .faq .content-wrapper {
@@ -297,15 +269,15 @@ aside .form-description {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  margin: 0;
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .faq .faq-content {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* ==========================================================================
@@ -396,15 +368,159 @@ aside .form-description {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles Here */
+
+  /*-------------------- Tablet Styles - General Styles --------------------*/
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /*-------------------- Tablet Styles - Base Header and Footer Styles --------------------*/
+
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+    margin: 0;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0px;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /*------------------- Tablet Styles - Homepage -------------------*/
+
+  /* Hero Area */
+
+  .hero-area h1 {
+    margin: 0;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+    align-content: space-around;
+  }
+
+  /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-items-description {
+    width: 50%;
+  }
+
+  .features .icon {
+    padding-bottom: 30px;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /*------------------- Tablet Styles - About Page -------------------*/
+
+  .mission h2 {
+    width: 100%;
+  }
+
+  .mission .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .mission .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /*------------------- Tablet Styles - FAQ Page -------------------*/
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles Here */
 }
 
 /* ==========================================================================
