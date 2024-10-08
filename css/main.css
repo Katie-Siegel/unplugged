@@ -89,12 +89,12 @@ textarea {
 
 /*-------------------- General Styles --------------------*/
 
-html{
+html {
   font-size: 1rem;
 
 }
 
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color:#e2e3ed;
@@ -102,7 +102,7 @@ body{
 }
 
 ul,
-li{
+ol {
   list-style-type: none;
   font-size: 1.125em;
   font-weight: bold;
@@ -116,15 +116,15 @@ a {
 
 }
 
-h1{
+h1 {
   font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
   font-size: 2.25em;
-  line-height: 2.688em;
+  line-height: 2.688rem;
   font-weight: 500;
 
 }
 
-h2{
+h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
@@ -132,23 +132,24 @@ h2{
 }
 
 h3,
-h4{
+h4 {
   font-family: 'Poppins', sans-serif;
 
 }
 
-p{
+p {
   font-size: .875em;
-  line-height: 1.125em;
+  line-height: 1.125rem;
 
 }
 
 img {
-  
+  width: 100%;
 
 }
 
 figure {
+  margin 0;
 
 }
 
@@ -179,16 +180,15 @@ header .content-wrapper {
   margin: 0;
 }
 
-header img{
-  display: flex;
-  justify-content: center;
-  width: 60%;
-}
-
 .header-divider {
   border-bottom: 1px solid #3a3a3a;
   width: 100%;
   margin: 10px 0 20px 0;
+}
+
+header figure{
+  width: 60%;
+
 }
 
 header nav {
@@ -249,9 +249,10 @@ footer .copyright {
 main .hero-area {
   display: flex;
   justify-content: center;
-  background: url(../img/unplugged-retreat.jpg) no-repeat #2a423a;
+  background: url(../img/unplugged-retreat.jpg) no-repeat #333;
   background-size: cover;
   background-position: center;
+  height: 31.25em;
 }
 
 /* Aside */
@@ -309,7 +310,7 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
-  background: url(../img/unplugged-retreat-features.jpg) no-repeat #2a423a;
+  background: url(../img/unplugged-retreat-features.jpg) no-repeat #333;
   background-size: cover;
   background-position: center;
 }
@@ -349,11 +350,13 @@ input[type=button] {
 
 .reviews h2 {
   margin: 40px 0px;
-  line-height 1.875em:
+  line-height 1.875rem:
 }
 
-.reviews img {
+.reviews figure {
   width: 100%;
+  margin: 0;
+  
 }
 
 .reviews h3 {
@@ -401,12 +404,12 @@ input[type=button] {
 }
 
 .faq-content h4{
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 
 .faq .faq-content {
   margin-bottom: 50px;
-  line-height: 1.5em;
+  line-height: 1.5rem;
 }
 
 /* ==========================================================================
@@ -507,6 +510,21 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  h1 {
+    font-size: 3em;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.875rem;
+  }
+
   /*-------------------- Tablet Styles - Base Header and Footer Styles --------------------*/
 
   header {
@@ -518,6 +536,10 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure{
+    width: 30%;
   }
 
   header nav {
@@ -542,10 +564,15 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.5em;
   }
 
   footer .contact {
     margin-bottom: 0px;
+  }
+
+  footer p{
+    line-height: 1.125em;
   }
 
   footer .copyright {
@@ -556,7 +583,11 @@ input[type=button] {
 
   /* Hero Area */
 
-  .hero-area h1 {
+  main .hero-area {
+    height: 600px;
+  }
+
+  main .hero-area h1 {
     margin: 0;
   }
 
@@ -603,8 +634,23 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews h2{
+    margin:0;
+    width: 76%;
+    padding-bottom: 2rem;
+  }
+
+  .client-review figure{
+    width: 50%;
+
+  }
+
+  .reviews h3{
+    width: 100%;
+  }
+
   .reviews article div {
-    width: 49%;
+    width: 48%;
   }
 
   /*------------------- Tablet Styles - About Page -------------------*/
@@ -626,6 +672,12 @@ input[type=button] {
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+    margin: 0;
+  }
+
+  .contact-section h4 {
+    font-size: 1.5em;
+
   }
 
   .contact-content {
@@ -639,6 +691,7 @@ input[type=button] {
   .faq .content-wrapper {
     justify-content: space-between;
   }
+
   .faq-content {
     flex-basis: 45%;
   }
@@ -646,6 +699,15 @@ input[type=button] {
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  p {
+
+    font-size: .875em;
+    line-height: .984rem;
+  }
+
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -655,6 +717,24 @@ input[type=button] {
 
   .content-wrapper {
     max-width: 950px;
+  }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.5rem;
   }
 
   /*-------------------- Desktop Styles - Base Header and Footer Styles --------------------*/
@@ -667,7 +747,7 @@ input[type=button] {
 
   /* Hero Area */
 
-  .hero-area h1{
+  main .hero-area h1{
     width 80%:
   }
 
@@ -692,16 +772,26 @@ input[type=button] {
     flex-basis: 33%;
   }
 
+  .features .features-item-description {
+    padding: 20%;
+  }
+
   /* Reviews */
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   .reviews article div {
-    width: 42%;
+    width: 45%;
   }
 
   /*------------------- Desktop Styles - About Page -------------------*/
 
   .mission h2 {
     width: 90%;
+    font-size: 3em;
+    margin: 0;
   }
 
   .contact-section .content-wrapper h2 {
@@ -712,6 +802,13 @@ input[type=button] {
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+
+  .faq h4,
+  p {
+    font-size: 1.125em;
+    line-height: 1.125rem;
   }
 
 }
