@@ -211,11 +211,11 @@ footer {
 }
 
 footer .content-wrapper {
-  width: 55%;
+  width: 60%;
 }
 
 footer h4 {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 footer p {
@@ -234,8 +234,13 @@ footer .social-icons {
 
 footer .social-icons p {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+footer i {
+  font-size: 1.313em;
+  
 }
 
 footer .copyright {
