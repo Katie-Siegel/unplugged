@@ -12,11 +12,12 @@
     <meta property="og:image" content="" />
 
     <link rel="manifest" href="../site.webmanifest" />
-    <link rel="apple-touch-icon" href="../icon.png" />
-    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+
 
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script src="js/app.js" defer></script>
 
     <meta name="theme-color" content="#fafafa" />
 
@@ -89,7 +90,6 @@
           </p>
         </div>
       </div>
-      <!-- faq content wrapper ends-->
     </main>
 
     <footer>
@@ -121,7 +121,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright 2024 | Unplugged</p>
+        <p>Copyright <span id="current-year"></span> | Unplugged</p>
       </div>
     </footer>
 
@@ -129,14 +129,13 @@
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
       window.ga = function () {
         ga.q.push(arguments);
       };
       ga.q = [];
       ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
+      ga("create", "https://katie-siegel.github.io/unplugged/", "auto");
       ga("set", "anonymizeIp", true);
       ga("set", "transport", "beacon");
       ga("send", "pageview");
