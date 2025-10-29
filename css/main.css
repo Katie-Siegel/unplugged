@@ -35,14 +35,13 @@ h2 {
   font-weight: 500;
 }
 
-h3,
-h4 {
+h3 {
   font-family: "Poppins", sans-serif;
 }
 
-p {
+h4, p {
   font-size: 0.875em;
-  line-height: 1.125rem;
+  line-height: 1.13rem;
 }
 
 img {
@@ -111,10 +110,11 @@ footer .content-wrapper {
 }
 
 footer h4 {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 footer p {
+  line-height: 1.3rem;
   margin: 0;
 }
 
@@ -128,7 +128,7 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons p {
+footer .social-icons h4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -139,7 +139,7 @@ footer .social-icons p {
 }
 
 footer i {
-  font-size: 1.313em;
+  font-size: 1.313rem;
 }
 
 footer .copyright {
@@ -389,8 +389,12 @@ input[type="button"] {
     margin-bottom: 0px;
   }
 
+  footer h4 {
+    line-height: 1.2em;
+  }
+
   footer p {
-    line-height: 1.125em;
+    line-height: 1.6rem;
   }
 
   footer h4 {
@@ -402,7 +406,8 @@ input[type="button"] {
     width: 40%;
   }
 
-  footer .social-icons p {
+  footer .social-icons h4 {
+    padding: 0;
     width: 50px;
     height: 50px;
   }
@@ -565,6 +570,17 @@ input[type="button"] {
 
   footer h3 {
     width: 70%;
+  }
+
+  footer p {
+    line-height: 2rem;
+  }
+
+  footer .social-icons h4, a {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
   }
 
   main .hero-area h1 {
