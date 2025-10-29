@@ -5,7 +5,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  color: #ffffff;
   background-color: #202322;
 }
 
@@ -14,12 +14,12 @@ ol {
   list-style-type: none;
   font-size: 1.125em;
   font-weight: bold;
-  color: #e2e3ed;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #e2e3ed;
+  color: #ffffff;
 }
 
 h1 {
@@ -159,7 +159,7 @@ main .hero-area {
 aside {
   display: flex;
   justify-content: center;
-  background: #527158;
+  background: #455F4A;
 }
 
 aside h3 {
